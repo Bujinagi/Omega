@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.mp3.MainActivity"
+    android:background="#9a9b76">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#CCffffff"
+            android:layout_weight="1"
+            android:src="@drawable/omega" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="500dp"
+                android:layout_height="60dp"
+                android:background="#80ffffff"
+                android:gravity="left"
+                android:text="Song Name"
+                android:textColor="#000000"
+                android:textSize="55dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#80ffffff"
+                android:gravity="left"
+                android:text="Artist"
+                android:textSize="35dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#81826e"
+        android:text="||"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:onClick = "pauseSong"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/view5"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/pauseButton"
+        android:layout_marginRight="15dp"
+        android:background="#81826e"
+        android:gravity="center"
+        android:text="\u220E"
+        android:layout_marginBottom="15dp"
+        android:textSize="36sp"/>
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/pauseButton"
+        android:layout_marginLeft="15dp"
+        android:background="#81826e"
+        android:onClick = "playSong"
+        android:gravity="center"
+        android:text="\u25BA"
+        android:layout_marginBottom="15dp"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/view7"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/view5"
+        android:layout_marginRight="15dp"
+        android:background="#81826e"
+        android:gravity="center"
+        android:text="\u23EE"
+        android:layout_marginBottom="15dp"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/view8"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/playButton"
+        android:layout_marginLeft="15dp"
+        android:background="#81826e"
+        android:gravity="center"
+        android:text="\u23ED"
+        android:layout_marginBottom="15dp"
+        android:textSize="36sp"/>
+
+</RelativeLayout>
